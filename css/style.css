@@ -23,7 +23,7 @@ body{
     justify-content: center;
     height: 100vh;
     font-family: var(--main-font);
-    background-image: url('/images/pattern-background-desktop.svg');
+    background-image: url('img/pattern-background-desktop.svg');
     background-size: cover;
     background-position: top;
     background-color: var(--pale-blue);
@@ -56,7 +56,7 @@ body{
     background-color: var(--bright-blue);
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
-    background-image: url('/images/illustration-hero.svg');
+    background-image: url('img/illustration-hero.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ body{
     height: 50px;
     width: 50px;
     margin: 5px;
-    background-image: url('/images/icon-music.svg');
+    background-image: url('img/icon-music.svg');
     background-position: center;
     background-size: cover;
 }
@@ -170,10 +170,9 @@ body{
 }
 
 
-/* Telefonlar (mobil cihazlar) için */
 @media only screen and (max-width: 767px) {
     body {
-        background-image: url('/images/pattern-background-mobile.svg');
+        background-image: url('img/pattern-background-mobile.svg');
     }
 
     .payment-btn {
@@ -182,9 +181,3 @@ body{
 
     
 }
-
-/* Tabletler için */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Buraya tabletler için özel stil kuralları ekleyebilirsiniz */
-  }
-  
