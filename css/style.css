@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 89%, 93%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(245, 87%, 65%);
+    --very-pale-blue: hsl(227, 50%, 95%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --main-font : "Red Hat Display", sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--main-font);
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-position: top;
+    background-color: var(--pale-blue);
+}
+
+
+.product-container  {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    -webkit-box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    align-items: center;
+    justify-content: space-between;
+    /* height: 67vh; */
+    border-radius: 18px;
+    max-height: 82vh;
+    min-height: 68vh;
+    max-width: 50vh;
+    min-width: 40vh;
+    /* width:  45vh; */
+    background-color: whitesmoke;
+    
+}
+
+.card-banner-picture {
+    width: 100%;
+    height: 13rem;
+    background-color: var(--bright-blue);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-image: url('/images/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-title h2 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 27px;
+}
+.card-title p {
+    text-align: center;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.product-plan {
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    background-color: var(--very-pale-blue);
+}
+
+.plan-icon {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-image: url('/images/icon-music.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.plan-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-title h4 {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.plan-title p {
+    color: var(--desaturated-blue);
+    font-weight: 600;
+    font-size: 14px;
+}
+.plan-choice {
+    margin: 5px;
+}
+
+.plan-change-btn {
+    color: var(--bright-blue);
+    font-weight: bold;
+}
+.plan-change-btn:hover {
+    transition: 0.5ms ease-in;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    
+}
+
+.product-summary {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.payment-btn {
+    background-color: var(--bright-blue);
+    padding: 14px 90px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--very-pale-blue);
+    -webkit-box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    box-shadow: 0px 8px 41px -1px rgba(0,0,0,0.33);
+    
+}
+
+.payment-btn:hover {
+    background-color: var(--bright-blue-hover);
+}
+
+.payment-cancel-btn{
+    text-decoration: none;
+    color : var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.payment-cancel-btn:hover {
+    color: black;
+}
+
+
+/* Telefonlar (mobil cihazlar) için */
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url('/images/pattern-background-mobile.svg');
+    }
+
+    .payment-btn {
+        padding: 10px 50px;
+    }
+
+    
+}
+
+/* Tabletler için */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Buraya tabletler için özel stil kuralları ekleyebilirsiniz */
+  }
+  
